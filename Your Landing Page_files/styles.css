@@ -1,0 +1,130 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #242424; /* Set background color to the first color */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.wrp{
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    margin:10px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto; /* Center the logo horizontally */
+    display: block; /* Ensure the margin property works correctly */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #009933; /* Set button color to the first color */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #006622; /* Darken button color on hover */
+}
+/* Add this to your existing CSS */
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #009933; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 153, 51, 0.5); /* Add a subtle box shadow on focus */
+}
+
+/* Add styles for checkboxes */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Adjust the button styles */
+button {
+    background-color: #009933;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+button:hover {
+    background-color: #006622;
+}
+/* Update checkbox styles */
+input[type="checkbox"] {
+    margin-right: 5px;
+    appearance: none; /* Remove default checkbox appearance */
+    -webkit-appearance: none; /* For older versions of Chrome/Safari */
+    -moz-appearance: none; /* For older versions of Firefox */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #009933;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #009933; /* Change background color when checked */
+    border-color: #009933; /* Change border color when checked */
+}
+
+/* Add custom checkbox indicator */
+input[type="checkbox"]::before {
+    content: '✔'; /* Unicode checkmark symbol */
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked::before {
+    visibility: visible;
+}
